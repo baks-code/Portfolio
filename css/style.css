@@ -29,3 +29,15 @@ body{
     text-align: center;
 }
 
+
+
+#Site_Progress{
+    background: #d8d50f;
+    height: 35px;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    font-size: 30px;
+    color: red;
+}
+
