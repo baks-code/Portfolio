@@ -2,3 +2,30 @@ body{
     background-image: url('../images/sunset.jpg');
     background-size: 100%;
 }
+
+
+/* Left Side Menu */
+
+.left_hand_menu .profile_picture {
+    margin-top: 60px;
+}
+
+.left_hand_menu .profile_picture img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.left_hand_menu {
+  background-color: #181422;
+  height: 100vh;
+  position: fixed;
+  top: 0px;  
+  width: 300px;
+}
+
+.left_hand_menu {
+    text-align: center;
+}
+
