@@ -2,8 +2,7 @@ body {
     margin: 0;
     background-image: url('../images/sunset.jpg');
     background-size: 100%;
-    
-  
+
 }
 
 
@@ -24,18 +23,19 @@ body {
   background-color: #181422;
 
   
-  height: 99vh;
+  height: 100vh;
 
 
-  width: 35vh;
-  min-width: 150px;
+  width: 280px;
+
+
+  min-width: 280px;
+
+
   position: fixed;
   top: 0px;  
-  border: 3px solid #f1f1f1;
-}
-
-.left_hand_menu {
-    text-align: center;
+  border: 1px solid #f1f1f1;
+  text-align: center;
 }
 
 
@@ -66,16 +66,16 @@ body {
     background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
     color: white;
     font-weight: bold;
-    border: 3px solid #f1f1f1;
+    border: 1px solid #f1f1f1;
     position: absolute;
 
 
 
 
 
-    width: calc(100vw - 222px);
+    width: calc(100vw - 280px);
 
-    transform: translate(212px, 0%);
+    transform: translate(280px, 0%);
 
 
 
@@ -83,4 +83,38 @@ body {
     
     padding: 10px;
     text-align: center;
+}
+
+
+
+
+
+/* Page Adjustment Based On Window Resolution */
+
+@media screen and (max-width: 1680px) {
+
+}
+
+
+@media screen and (max-width: 1280px){
+
+}
+
+@media screen and (max-width: 845px){
+
+
+    .left_hand_menu {        
+        transform: translateX(-100%);
+    }
+
+    .section{
+        transform: translate(0%, 0%);
+        width: calc(100vw);
+
+        border:none;
+
+
+
+    }
+
 }
