@@ -100,7 +100,7 @@ body {
     background-color: #000000; /* Fallback color */
     color: white;
     /* font-weight: bold; */
-    /* border: 1px solid #f1f1f1; */
+    border-bottom: 1px solid #f1f1f1;
     
 
     z-index: 99 !important;
