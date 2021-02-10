@@ -7,7 +7,28 @@ body {
 
 }
 
+.left_hand_menu-nav li:hover a,
+.left_hand_menu-nav li.active a {
+    background: #fff;
+    color: #3710c4;
+}
 
+.left_hand_main-nav li {
+    display: block;
+}
+
+
+.left_hand_main-nav li a {
+    height: 70px;
+    line-height: 70px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    width: 100%;
+    transition: all 0.5s;
+    border-top: 2px solid #fff;
+}
 
 
 
@@ -40,6 +61,11 @@ body {
 
   min-width: 280px;
 
+  /* In small screens, allows the side menu to appear above all the other elements */
+  z-index: 9999 !important;
+
+  overflow-y: scroll;
+
 
   position: fixed;
   top: 0px;  
@@ -63,7 +89,7 @@ body {
     bottom: 0;
     left: 0;
 
-    /* visibility: hidden; */
+    visibility: hidden;
 }
 
 
@@ -75,11 +101,10 @@ body {
 
     transform: translate(280px, 0%);
 
-    margin-top: 10%;
+    padding-top: 180px;
     
     padding: 0px;
     text-align: center;
-    height: 10%;
 
     position: relative;
 
@@ -87,10 +112,7 @@ body {
 
     transform: translate(340px, 0%);
     
-
-    border-bottom: 3px solid rgba(250, 250, 250, 0.25);
     min-height: 100vh;
-    padding-bottom: 80px;
 }
 
 
@@ -116,9 +138,25 @@ body {
 
 .header-img img{
     height: 50px;
-
+    left: 46%;
     border-radius: 50%;
     margin-top: 5px;
+    /* position:absolute; */
+    float:right;
+    margin-right: 30px;
+}
+
+
+
+.menu-options{
+    height: 40px;
+
+    cursor: pointer;
+    margin: 0%;
+    float: left;
+    border-radius: 50%;
+    margin-top: 8px;
+    margin-left: 8px;
 }
 
 
@@ -127,6 +165,10 @@ body {
 
 
 
+
+#mobile{
+    z-index: 999;
+  }
 
 
 
@@ -163,15 +205,19 @@ body {
 
 
 
-
-
-
-
-
-
-
-
 /* Page Adjustment Based On Window Resolution */
+
+#menu-close {
+    display: none;
+} 
+
+#mobile_space{
+    display: none;
+}
+
+hr{
+    display: none;
+}
 
 @media screen and (max-width: 1680px) {
     .header{
@@ -190,9 +236,28 @@ body {
 
 @media screen and (max-width: 845px){
 
+    #menu-toggle,
+    #menu-close {
+        display: inline-block;
+    }
 
-    .left_hand_menu {        
+    hr{
+        display:inherit;
+        
+    }
+
+    #mobile_space{
+        display:block;
+    }
+
+    .left_hand_menu {
         transform: translateX(-100%);
+    }
+
+    .left_hand_menu.open {
+        display: inline-block;
+        -webkit-transform: translateX(0) !important;
+                transform: translateX(0) !important;
     }
 
     .header{

@@ -9,9 +9,6 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-
-
-
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
 
@@ -19,8 +16,11 @@
 
 <body>
 
-
   <div id="menu" class="left_hand_menu">
+
+
+    <div  id="menu-close" style="float: right; margin-right: 20px; margin-top: 10px; color: #ec0f0f; cursor: pointer; ">Close</div>
+
     <div class="profile_picture">
       <a href="#"><img src="images/profile-picture.jpg" /></a>
     </div>
@@ -29,7 +29,7 @@
       <span style="color: azure; font-size: 18px;">Software Engineer</span>
     </div>
     <nav class="left_hand_menu-nav">
-      <ul>
+      <ul class="nav-menu" id="nav-nav">
         <li><a href="#aboutme">About Me</a></li>
         <li><a href="#myprojects">My Projects</a></li>
         <li><a href="#resume">Resume</a></li>
@@ -41,42 +41,39 @@
   </div>
   <div class="header">
 
+    <img  class="menu-options" id="menu-toggle" id="mobile" src="images/icons/menu-2 (2).png">
+
+ 
+
+    
+
     <div class="header-img">
       <img src="images/profile-picture.jpg" />
     </div>
   </div>
 
-  <section class="content" data-section="aboutme">
-    <img style="width: 200px; margin-top: 100px;" src="images/profile-picture.jpg" />
+  <section id="mobile_space" style="min-height: 10vh;">
+    
+
   </section>
 
-  <section class="content" data-section="myprojects">
-    <img style="width: 200px; margin-top: 100px;" src="images/profile-picture.jpg" />
+  <section class="content" view-section="aboutme">
+    
+    <hr><hr><hr><h1>About Me</h1>
+
   </section>
 
-  <section class="content" data-section="resume">
-    <img style="width: 200px; margin-top: 100px;" src="images/profile-picture.jpg" />
+  <section class="content" view-section="myprojects">
+    <hr><hr><hr><h1>My Projects</h1>
   </section>
 
-  <section class="content" data-section="resume1">
-    <img style="width: 200px; margin-top: 100px;" src="images/profile-picture.jpg" />
+  <section class="content" view-section="resume">
+    <hr><hr><hr><h1>Resume</h1>
   </section>
 
-  <section class="content" data-section="resume2">
-    <img style="width: 200px; margin-top: 100px;" src="images/profile-picture.jpg" />
+  <section class="content" view-section="contactme">
+    <hr><hr><hr><h1>Contact Me</h1>
   </section>
-
-  <section class="content" data-section="resume3">
-    <img style="width: 200px; margin-top: 100px;" src="images/profile-picture.jpg" />
-  </section>
-
-
-
-
-
-
-
-
 
   </div>
 
@@ -84,10 +81,9 @@
     Under Construction
   </div>
 
-
-
-
-
+  <script src="script/isotope.min.js"></script>
+  <script src="script/custom.js"></script>
+  <script src="script/navigate.js"></script>
 
 </body>
 
