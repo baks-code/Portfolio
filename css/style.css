@@ -62,7 +62,7 @@ body {
   min-width: 280px;
 
   /* In small screens, allows the side menu to appear above all the other elements */
-  z-index: 99 !important;
+  z-index: 999 !important;
 
   overflow-y: scroll;
 
@@ -101,7 +101,7 @@ body {
     position: fixed;
     bottom: 0;
     left: 0;
-    z-index: 99 !important;
+    z-index: 99999 !important;
 
     /* visibility: hidden; */
 }
